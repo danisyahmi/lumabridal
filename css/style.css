@@ -34,12 +34,12 @@ nav ul li p {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  font-size: 1em; font-size: 1em;
+  font-size: 18px;
   padding: 0;
   margin: 0;
   display: block;
-  line-height: 1.5; line-height: 1.5;
-  cursor: pointer;  cursor: pointer;
+  line-height: 1.5;
+  cursor: pointer;
 }
 
 nav ul li:hover > ul {
@@ -65,4 +65,8 @@ nav ul ul li {
 nav ul ul ul {
   left: 100%;
   top: 0; top: 0;
+}
+
+nav ul li:hover {
+  background-color: #ddd;
 }
