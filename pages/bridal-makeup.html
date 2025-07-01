@@ -6,6 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>LumaBridal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fffafc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 40px auto;
+            max-width: 1000px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .makeup-style {
+            text-align: center;
+        }
+
+        .makeup-style h2 {
+            font-size: 2.5em;
+            color: #b85c85;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+            text-transform: capitalize;
+        }
+
+        .makeup-style p.description {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        #introduction {
+            padding: 40px 20px;
+            margin: 40px auto;
+            max-width: 1000px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        #introduction h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #b85c85;
+            margin-bottom: 30px;
+            font-family: 'Georgia', serif;
+        }
+
+        .intro-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .intro-wrapper img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
+        }
+
+        .intro-wrapper p {
+            flex: 1;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 
 <body>
@@ -79,6 +185,17 @@
             </ul>
         </nav>
     </header>
+    <section id="introduction">
+        <h1>Bridal Makeup by Syed Mohamad Fahmi (Syedewa)</h1>
+        <div class="intro-wrapper">
+            <img src="/attachment/FARISYA-ALEEYA-BINTI-MOHD-AZIZUDDIN.jpg" alt="Make Up Artist">
+            <p>
+                Discover the artistry of bridal makeup with Syed Mohamad Fahmi, known as Syedewa, who specializes in
+                creating stunning looks for brides. From soft glam to bold statements, each style is designed to enhance
+                the bride's natural beauty and complement her unique personality.
+            </p>
+        </div>
+    </section>
     <section id="soft-glam-section">
         <div class="makeup-style">
             <h2>Soft Glam</h2>
@@ -87,17 +204,62 @@
                 elegant finishes — perfect for brides who want a graceful, radiant appearance on their big day.
             </p>
             <div class="image-gallery">
-                <img src="/attachment/soft-glam-1.jpg" alt="Soft Glam Makeup Style 1">
-                <img src="/attachment/soft-glam-2.jpg" alt="Soft Glam Makeup Style 2">
+                <img src="/attachment/IMG_1364.JPG" alt="Soft Glam Makeup Style 1">
+                <img src="/attachment/IMG_1365.JPG" alt="Soft Glam Makeup Style 2">
             </div>
     </section>
     <section id="bold-glam-section">
+        <div class="makeup-style">
+            <h2>Bold Glam</h2>
+            <p class="description">
+                A striking and dramatic look that features bold colors, defined contours, and eye-catching elements —
+                ideal for brides who want to make a statement on their special day.
+            </p>
+            <div class="image-gallery">
+                <img src="/attachment/IMG_1363.JPG" alt="Bold Glam Makeup Style 1">
+                <img src="/attachment/IMG_1373.JPG" alt="Bold Glam Makeup Style 2">
+            </div>
+        </div>
     </section>
     <section id="arabian-makeup-section">
+        <div class="makeup-style">
+            <h2>Arabian Makeup Look</h2>
+            <p class="description">
+                A mesmerizing and exotic look characterized by dramatic eyes, rich colors, and intricate details —
+                perfect for brides who want to embrace a cultural aesthetic on their wedding day.
+            </p>
+            <div class="image-gallery">
+                <img src="/attachment/IMG_1371.PNG" alt="Arabian Makeup Style 1">
+                <img src="/attachment/IMG_1372.JPG" alt="Arabian Makeup Style 2">
+            </div>
+        </div>
     </section>
     <section id="thai-makeup-section">
+        <div class="makeup-style">
+            <h2>Thai Makeup Look</h2>
+            <p class="description">
+                A beautiful and elegant look that highlights the bride's features with soft colors and delicate details
+                — ideal for brides who want a refined and graceful appearance.
+            </p>
+            <div class="image-gallery">
+                <img src="/attachment/IMG_1374.PNG" alt="Thai Makeup Style 1">
+                <img src="/attachment/IMG_1367.JPG" alt="Thai Makeup Style 2">
+            </div>
+        </div>
+    </section>
     </section>
     <section id="bronze-glow-section">
+        <div class="makeup-style">
+            <h2>Bronze Glow Look</h2>
+            <p class="description">
+                A radiant and sun-kissed look that combines warm tones and a luminous finish — perfect for brides who
+                want to achieve a glowing, healthy complexion on their wedding day.
+            </p>
+            <div class="image-gallery">
+                <img src="/attachment/bronze-glow-makeup-1.jpg" alt="Bronze Glow Makeup Style 1">
+                <img src="/attachment/bronze-glow-makeup-2.jpg" alt="Bronze Glow Makeup Style 2">
+            </div>
+        </div>
     </section>
 </body>
 
