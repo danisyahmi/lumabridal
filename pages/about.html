@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>LumaBridal</title>
+    <link rel="icon" type="image/x-icon" href="/attachment/lumabridal-logo.png">
+    <style>
+        .branding {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px 20px;
+            border-bottom: 2px solid #e4c6e6;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 12px;
+        }
+
+        .brand-text h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #e4c6e6;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+        }
+
+        .brand-text .tagline {
+            font-size: 1.2rem;
+            color: #e4c6e6;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        #team-section {
+            padding: 40px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #team-section h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #e4c6e6;
+            font-size: 2.5rem;
+            font-family: 'Georgia', serif;
+
+        }
+
+        table {
+            width: 75%;
+            margin: auto;
+            border-collapse: separate;
+            border-spacing: 0px 20px;
+        }
+
+        td {
+            background-color: #ffffff;
+            padding: 35px 20px;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        td.founder-info {
+            padding-left: 25px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+            font-family: 'Georgia', serif;
+
+        }
+
+        td.founder-info h3 {
+            margin: 0;
+            color: #6a217d;
+
+        }
+
+        .founder-picture {
+            text-align: center;
+        }
+
+        .founder-img {
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-column {
+            border-radius: 0 20px 20px 0;
+        }
+
+        .left-column {
+            border-radius: 20px 0 0 20px;
+        }
+
+        /* Animation for sliding in from left */
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Animation for sliding in from right */
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Apply animation to each row */
+        .left-row {
+            animation: slideInFromLeft 2s ease forwards;
+            opacity: 0;
+        }
+
+        .right-row {
+            animation: slideInFromRight 2s ease forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li class="navbar-left"><a href="index.html">LumaBridal</a></li>
+                <li>
+                    <a href="pages/about.html">About us</a>
+                </li>
+                <li>
+                    <p>Wedding Dress</p>
+                    <ul>
+                        <li>
+                            <a href="pages/wedding-dress/traditional.html">Traditional</a>
+                            <ul>
+                                <li><a href="pages/wedding-dress/traditional.html#saree-section">Saree</a></li>
+                                <li><a href="pages/wedding-dress/traditional.html#songket-section">Songket</a></li>
+                                <li><a href="pages/wedding-dress/traditional.html#punjabi-section">Punjabi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="pages/wedding-dress/modern.html">Modern</a>
+                            <ul>
+                                <li><a href="pages/wedding-dress/modern.html#white-dress-section">White Dress</a></li>
+                                <li><a href="pages/wedding-dress/modern.html#gown-section">Gown</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="pages/bridal-makeup.html">Bridal Makeup</a>
+                </li>
+                <li>
+                    <p>Wedding Planning Package</p>
+                    <ul>
+                        <li>
+                            <a href="pages/wedding-planning-package/theme.html">Theme</a>
+                            <ul>
+                                <li><a href="pages/wedding-planning-package/theme.html#fairytale-section">Fairytale</a></li>
+                                <li><a href="pages/wedding-planning-package/theme.html#garden-section">Garden</a></li>
+                                <li><a href="pages/wedding-planning-package/theme.html#bohemian-section">Bohemian</a></li>
+                                <li><a href="pages/wedding-planning-package/theme.html#modern-minimalist-section">Modern
+                                        Minimalist</a></li>
+                                <li><a href="pages/wedding-planning-package/theme.html#bollywood-section">Bollywood</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pages/wedding-planning-package/wedding-dais.html">Wedding Dais</a></li>
+                        <li><a href="pages/wedding-planning-package/door-gift.html">Door Gift</a></li>
+                        <li><a href="pages/wedding-planning-package/wedding-card.html">Wedding Card</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/contact-us.html">Contact Us</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="branding">
+        <!-- <img src="/attachment/lumabridal-logo.png" alt="LumaBridal Logo" class="logo"> -->
+        <div class="brand-text">
+            <h1>LumaBridal</h1>
+            <p class="tagline">Your Story, Styled Beautifully</p>
+        </div>
+    </section>
+    <section id="team-section">
+        <h1>Our Team</h1>
+        <table>
+            <tr class="left-row">
+                <td class="founder-picture left-column">
+                    <img class="founder-img" src="/attachment/founder/NYDANIA-ALEEYA-BINTI-AHMAD-TARMIZI.jpg"
+                        alt="NYDANIA ALEEYA BINTI AHMAD TARMIZI">
+                </td>
+                <td class="founder-info right-column">
+                    <h3>NYDANIA ALEEYA BINTI AHMAD TARMIZI</h3>
+                    <p><strong>Founder & Wedding Planner</strong></p>
+                    <ul>
+                        <li>Nydania has a talent for turning ideas into reality. Whether it's a modern garden theme or a
+                            traditional Malay ceremony, she brings fresh, beautiful concepts to each event.</li>
+                        <li>When unexpected challenges arise — a sudden weather change or a vendor delay — Nydania stays
+                            composed and finds quick, effective solutions without disrupting the couple's special day.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="right-row">
+                <td class="founder-info left-column">
+                    <h3>NURAIN SYAHIRAH BINTI ROZLAN</h3>
+                    <p><strong>Wedding Planner</strong></p>
+                    <ul>
+                        <li>Syahirah ensures every aspect of the wedding, from the color scheme to the table
+                            arrangements, is flawless. She pays close attention to the smallest details to bring the
+                            couple's vision to life.</li>
+                        <li>She coordinates seamlessly with vendors, clients, and her team, making sure everyone is on
+                            the same page. Her calm and clear communication keeps things running smoothly under
+                            pressure.</li>
+                    </ul>
+                </td>
+                <td class="founder-picture right-column">
+                    <img class="founder-img" src="/attachment/founder/NURAIN-SYAHIRAH-BINTI-ROZLAN.jpg"
+                        alt="NURAIN SYAHIRAH BINTI ROZLAN">
+                </td>
+            </tr>
+            <tr class="left-row">
+                <td class="founder-picture left-column">
+                    <img class="founder-img" src="/attachment/founder/FARISYA-ALEEYA-BINTI-MOHD-AZIZUDDIN.jpg"
+                        alt="FARISYA ALEEYA BINTI MOHD AZIZZUDIN">
+                </td>
+                <td class="founder-info right-column">
+                    <h3>FARISYA ALEEYA BINTI MOHD AZIZZUDIN</h3>
+                    <p><strong>Wedding Assistant</strong></p>
+                    <ul>
+                        <li>Farisya is always one step ahead, ensuring that the bride and planner have what they need at
+                            every moment. From keeping schedules on time to handling last-minute errands, she’s a
+                            dependable right-hand.</li>
+                        <li>With her warm personality, Farisya keeps guests comfortable and calm, especially nervous
+                            brides or family members. She's great at making everyone feel welcomed and cared for.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="right-row">
+                <td class="founder-info left-column">
+                    <h3>NUR ASMA ADRIANA ADILA BINTI MAT ARIF</h3>
+                    <p><strong>Wedding Coordinator</strong></p>
+                    <ul>
+                        <li>Adriana adapts quickly to changing situations, learns client preferences fast, and keeps pace
+                            in high-pressure environments, making her an asset during busy wedding preparations.</li>
+                        <li>She handles checklists, decor setup, and guest coordination with precision, helping ensure
+                            the event flows smoothly from start to finish.</li>
+                    </ul>
+                </td>
+                <td class="founder-picture">
+                    <img class="founder-img" src="/attachment/founder/NUR-ASMA-ADRIANA-ADILA-BINTI-MAT-ARIF.jpg"
+                        alt="NUR ASMA ADRIANA ADILA BINTI MAT ARIF">
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>
