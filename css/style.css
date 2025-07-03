@@ -7,6 +7,7 @@ body {
   line-height: 1.6;
 }
 
+/* Navbar */
 header {
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -78,6 +79,7 @@ nav ul li:hover {
   background-color: #ddd;
 }
 
+/* Section Display */
 section {
   padding: 40px 20px;
   margin: 40px auto;
@@ -148,4 +150,52 @@ section:hover {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Doorgift and Wedding Card Table*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  border-radius: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+th,
+td {
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th,
+.card-preview h2 {
+  color: #b85c85;
+  font-family: "Georgia", serif;
+  font-size: 1.2rem;
+}
+
+.card-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-preview h2 {
+  margin: 0;
+}
+
+.card-preview img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-preview img:hover {
+  transform: scale(1.125);
 }
