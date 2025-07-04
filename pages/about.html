@@ -5,37 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/attachment/Company-Logo.png">
     <title>LumaBridal</title>
-    <link rel="icon" type="image/x-icon" href="/attachment/lumabridal-logo.png">
     <style>
+        section:hover{
+            transform: none;
+        }
         .branding {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 40px 20px 20px;
-            border-bottom: 2px solid #e4c6e6;
-        }
-
-        .logo {
-            width: 100px;
-            height: auto;
-            margin-bottom: 10px;
-            border-radius: 12px;
+            padding: 40px 20px 10px 20px;
         }
 
         .brand-text h1 {
             font-size: 2.5rem;
             margin: 0;
-            color: #e4c6e6;
+            color: #b85c85;
             font-family: 'Georgia', serif;
             letter-spacing: 1px;
         }
 
         .brand-text .tagline {
             font-size: 1.2rem;
-            color: #e4c6e6;
+            color: #b85c85;
             margin-top: 10px;
             font-style: italic;
         }
@@ -47,8 +42,8 @@
 
         #team-section h1 {
             text-align: center;
-            margin-bottom: 40px;
-            color: #e4c6e6;
+            margin-bottom: 20px;
+            color: #b85c85;
             font-size: 2.5rem;
             font-family: 'Georgia', serif;
 
@@ -59,13 +54,15 @@
             margin: auto;
             border-collapse: separate;
             border-spacing: 0px 20px;
+            box-shadow: none;
         }
 
         td {
             background-color: #ffffff;
             padding: 35px 20px;
-            vertical-align: top;
+            vertical-align: center;
             width: 50%;
+            border: none;
         }
 
         td.founder-info {
@@ -79,8 +76,12 @@
 
         td.founder-info h3 {
             margin: 0;
-            color: #6a217d;
+            color: #b85c85;
 
+        }
+
+        td.founder-info p {
+            color: #eb67a2;
         }
 
         .founder-picture {
@@ -203,11 +204,11 @@
         </nav>
     </header>
     <section class="branding">
-        <!-- <img src="/attachment/lumabridal-logo.png" alt="LumaBridal Logo" class="logo"> -->
         <div class="brand-text">
             <h1>LumaBridal</h1>
             <p class="tagline">Your Story, Styled Beautifully</p>
         </div>
+        <p></p>
     </section>
     <section id="team-section">
         <h1>Our Team</h1>
@@ -283,6 +284,7 @@
             </tr>
         </table>
     </section>
+
 </body>
 
 </html>

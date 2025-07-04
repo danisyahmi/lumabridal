@@ -4,10 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/attachment/Company-Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <title>LumaBridal</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
         /* top banner section */
+        section {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+            box-sizing: border-box;
+            box-shadow: none;
+        }
+
+        section:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
         #top-banner {
             width: 100%;
             height: 500px;
@@ -21,13 +44,14 @@
             justify-content: center;
             align-items: center;
             color: #fff;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 1);
         }
 
         #top-banner h1,
         #top-banner h3 {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: 'Playfair Display', serif;
             margin: 0.2em 0;
+            color: #fff0f5;
         }
 
         /* about us section */
@@ -43,12 +67,16 @@
             font-size: 1.15em;
             color: #444;
             margin-bottom: 1.5em;
-            line-height: 1.7;
+            line-height: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 2rem 0;
         }
 
         #introduction-section a {
             display: inline-block;
-            background: #3245f4;
+            background: #eb41b2;
             color: #FFFFFF;
             font-weight: bold;
             text-decoration: none;
@@ -59,26 +87,51 @@
         }
 
         #introduction-section a:hover {
-            background: #7395ea;
+            background: #f098eb;
             color: #fff;
         }
+
+        .video-header {
+            font-size: 2rem;
+            color: #8b3f60;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .video-description {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #introduction-section video {
+            display: block;
+            margin: 0 auto;
+            max-width: 50%;
+            height: auto;
+            border: 4px solid #f8f0e3;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
 
         /* service section */
         #services-section {
             padding: 50px 20px;
-            margin: 40px auto;
-            width: 85%;
-            background-color: #fff0f5;
-            border-radius: 16px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
         }
 
         #services-section h2 {
             text-align: center;
             font-size: 2.2em;
-            color: #b85c85;
+            color: #8b3f60;
             margin-bottom: 40px;
-            font-family: 'Georgia', serif;
+            font-family: 'Playfair Display', serif;
+
         }
 
         .services-container {
@@ -91,7 +144,7 @@
             background-color: #fff;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -134,6 +187,36 @@
             color: #d36a9b;
             text-decoration: underline;
         }
+        footer {
+            background-color: #310101;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.2s ease;
+        }
+        footer a:hover {
+            color: #f098eb;
+        }
+        footer i {
+            margin-right: 5px;
+        }
+        footer a i {
+            color: #fff;
+        }
+        footer a:hover i {
+            color: #f098eb;
+        }
     </style>
 </head>
 
@@ -141,56 +224,56 @@
     <header class="navbar">
         <nav>
             <ul>
-                <li class="navbar-left"><a href="index.html">LumaBridal</a></li>
+                <li class="navbar-left"><a href="/index.html">LumaBridal</a></li>
                 <li>
-                    <a href="pages/about.html">About us</a>
+                    <a href="/pages/about.html">About us</a>
                 </li>
                 <li>
                     <p>Wedding Dress</p>
                     <ul>
                         <li>
-                            <a href="pages/wedding-dress/traditional.html">Traditional</a>
+                            <a href="/pages/wedding-dress/traditional.html">Traditional</a>
                             <ul>
-                                <li><a href="pages/wedding-dress/traditional.html#saree-section">Saree</a></li>
-                                <li><a href="pages/wedding-dress/traditional.html#songket-section">Songket</a></li>
-                                <li><a href="pages/wedding-dress/traditional.html#punjabi-section">Punjabi</a></li>
+                                <li><a href="/pages/wedding-dress/traditional.html#saree-section">Saree</a></li>
+                                <li><a href="/pages/wedding-dress/traditional.html#songket-section">Songket</a></li>
+                                <li><a href="/pages/wedding-dress/traditional.html#punjabi-section">Punjabi</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="pages/wedding-dress/modern.html">Modern</a>
+                            <a href="/pages/wedding-dress/modern.html">Modern</a>
                             <ul>
-                                <li><a href="pages/wedding-dress/modern.html#white-dress-section">White Dress</a></li>
-                                <li><a href="pages/wedding-dress/modern.html#gown-section">Gown</a></li>
+                                <li><a href="/pages/wedding-dress/modern.html#white-dress-section">White Dress</a></li>
+                                <li><a href="/pages/wedding-dress/modern.html#gown-section">Gown</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="pages/bridal-makeup.html">Bridal Makeup</a>
+                    <a href="/pages/bridal-makeup.html">Bridal Makeup</a>
                 </li>
                 <li>
                     <p>Wedding Planning Package</p>
                     <ul>
                         <li>
-                            <a href="pages/wedding-planning-package/theme.html">Theme</a>
+                            <a href="/pages/wedding-planning-package/theme.html">Theme</a>
                             <ul>
-                                <li><a href="pages/wedding-planning-package/theme.html#fairytale-section">Fairytale</a>
+                                <li><a href="/pages/wedding-planning-package/theme.html#fairytale-section">Fairytale</a>
                                 </li>
-                                <li><a href="pages/wedding-planning-package/theme.html#garden-section">Garden</a></li>
-                                <li><a href="pages/wedding-planning-package/theme.html#bohemian-section">Bohemian</a>
+                                <li><a href="/pages/wedding-planning-package/theme.html#garden-section">Garden</a></li>
+                                <li><a href="/pages/wedding-planning-package/theme.html#bohemian-section">Bohemian</a>
                                 </li>
-                                <li><a href="pages/wedding-planning-package/theme.html#modern-minimalist-section">Modern
+                                <li><a href="/pages/wedding-planning-package/theme.html#modern-minimalist-section">Modern
                                         Minimalist</a></li>
-                                <li><a href="pages/wedding-planning-package/theme.html#bollywood-section">Bollywood</a>
+                                <li><a href="/pages/wedding-planning-package/theme.html#bollywood-section">Bollywood</a>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="pages/wedding-planning-package/wedding-dais.html">Wedding Dais</a></li>
-                        <li><a href="pages/wedding-planning-package/door-gift.html">Door Gift</a></li>
-                        <li><a href="pages/wedding-planning-package/wedding-card.html">Wedding Card</a></li>
+                        <li><a href="/pages/wedding-planning-package/wedding-dais.html">Wedding Dais</a></li>
+                        <li><a href="/pages/wedding-planning-package/door-gift.html">Door Gift</a></li>
+                        <li><a href="/pages/wedding-planning-package/wedding-card.html">Wedding Card</a></li>
                     </ul>
                 </li>
-                <li><a href="pages/contact-us.html">Contact Us</a></li>
+                <li><a href="/pages/contact-us.html">Contact Us</a></li>
                 <li></li>
                 <li></li>
             </ul>
@@ -198,7 +281,7 @@
     </header>
     <section id="top-banner">
         <h1 style="font-size: 65px;">LumaBridal</h1>
-        <h3>Make your dream wedding come true</h3>
+        <h3>Your Story, Styled Beautifully</h3>
     </section>
     <section id="introduction-section">
         <p>
@@ -210,31 +293,27 @@
             packages.
         </p>
         <a href="/pages/about.html">More about us!</a>
+        <br><br><br>
+        <h2 class="video-header">Experience the Magic of a Lunaria Wedding</h2>
+        <p class="video-description">
+            Discover the beauty, emotion, and joy captured in our signature wedding moments. From the first look
+            to the final dance, every frame tells a story of love, crafted with care by Lunaria Weddings.
+        </p>
+        <video src="/attachment/VID-MONTAJ-WEDDING.mov" controls autoplay></video>
     </section>
     <section id="services-section">
         <h2>Our Services</h2>
         <div class="services-container">
             <div class="services-list">
-                <strong>Wedding Dress</strong><br>
+                <strong>Wedding Dress</strong>
                 <em>Styles we offer:</em>
-                <ul>
-                    <li>Traditional
-                        <ol>
-                            <li><a href="/pages/wedding-dress/traditional/saree.html">Saree</a></li>
-                            <li><a href="/pages/wedding-dress/traditional/songket.html">Songket</a></li>
-                            <li><a href="/pages/wedding-dress/traditional/punjabi.html">Punjabi</a></li>
-                        </ol>
-                    </li>
-                    <li>Modern
-                        <ol>
-                            <li><a href="/pages/wedding-dress/modern/white-dress.html">White Dress</a></li>
-                            <li><a href="/pages/wedding-dress/modern/gown.html">Gown</a></li>
-                        </ol>
-                    </li>
-                </ul>
+                <ol>
+                    <li><a href="/pages/wedding-dress/traditional.html">Traditional</a></li>
+                    <li><a href="/pages/wedding-dress/modern.html">Modern</a></li>
+                </ol>
             </div>
             <div class="services-list">
-                <strong>Bridal Makeup by Syedewa</strong><br>
+                <strong>Bridal Makeup by Syedewa</strong>
                 <em>Makeup looks we offer:</em>
                 <ol>
                     <li><a href="/pages/bridal-makeup.html#soft-glam-section">Soft Glam</a></li>
@@ -246,7 +325,10 @@
             </div>
             <div class="services-list">
                 <ul>
-                    <li><strong>Wedding Planning Packages</strong><br>
+                    <li><strong>Door Gift</strong></li>
+                    <li><strong>Wedding Card</strong></li>
+                    <li><strong>Wedding Dais</strong></li>
+                    <li><strong>Wedding Theme</strong>
                         <em>Themes available:</em>
                         <ol>
                             <li><a href="/pages/bridal-makeup.html#soft-glam-section">Fairytale</a></li>
@@ -256,13 +338,23 @@
                             <li><a href="/pages/bridal-makeup.html#soft-glam-section">Bollywood</a></li>
                         </ol>
                     </li>
-                    <li><strong>Door Gift</strong></li>
-                    <li><strong>Wedding Card</strong></li>
-                    <li><strong>Wedding Dais</strong></li>
                 </ul>
             </div>
         </div>
     </section>
+    <footer >
+        <p>&copy; 2023 LumaBridal. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="https://wa.link/1cojxb" target="_blank"><i class="fa-brands fa-whatsapp"></i> Contact
+                Us on
+                WhatsApp</a> |
+            <a href="https://instagram.com/luma.bridal" target="_blank"><i class="fa-brands fa-instagram"></i>
+                Contact Us on Instagram</a> |
+            <a href="https://www.tiktok.com/@lumabridal?_t=ZS-8xh8hGZU3Ob&_r=1" target="_blank"><i
+                    class="fa-brands fa-tiktok"></i> Contact Us on TikTok</a>
+
+        </p>
+    </footer>
 </body>
 
 </html>
