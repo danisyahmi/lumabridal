@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="attachment/Company-Logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <title>LumaBridal</title>
     <style>
@@ -36,7 +37,7 @@
             height: 500px;
             overflow: hidden;
             position: relative;
-            background-image: url("attachment/8a627ee1-2a28-4a6d-be67-cfc464ecc123.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("attachment/8a627ee1-2a28-4a6d-be67-cfc464ecc123.jpg");
             background-size: cover;
             background-position: center;
             display: flex;
@@ -131,7 +132,6 @@
             color: #8b3f60;
             margin-bottom: 40px;
             font-family: 'Playfair Display', serif;
-
         }
 
         .services-container {
@@ -187,6 +187,174 @@
             color: #d36a9b;
             text-decoration: underline;
         }
+
+        /* testimonials section */
+        #testimonials-section {
+            padding: 50px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        #testimonials-section h2{
+          text-align: center;
+            font-size: 2.2em;
+            color: #8b3f60;
+            margin-bottom: 40px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        #testimonials-container {
+            display: flex;
+            margin-top: 20px;
+            max-width: 80%;
+            margin: auto;
+            gap: 60px;
+        }
+
+        .testimonials-img {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        .testimonials-img img {
+            position: absolute;
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            transform: scale(0.8);
+            animation: popIn 0.6s ease forwards;
+        }
+
+        #testimonial-1 {
+            top: 0;
+            left: 0;
+            transform: translateX(-50%) scale(0.8);
+            animation-delay: 0.1s;
+        }
+
+        #testimonial-2 {
+            top: 10%;
+            right: 10%;
+            transform: translateY(-50%) scale(0.8);
+            animation-delay: 0.2s;
+        }
+
+        #testimonial-3 {
+            top: 20%;
+            left: 20%;
+            transform: translate(-50%, -50%) scale(0.8);
+            width: 180px;
+            height: 220px;
+            z-index: 2;
+            animation-delay: 0.3s;
+        }
+
+        #testimonial-4 {
+            top: 60%;
+            right: 0%;
+            transform: translateY(-50%) scale(0.8);
+            animation-delay: 0.4s;
+        }
+
+        #testimonial-5 {
+            top: 60%;
+            left: 5%;
+            transform: translateX(-50%) scale(0.8);
+            animation-delay: 0.5s;
+        }
+
+        @keyframes popIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .testimonials-text {
+            margin-left: 20px;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            margin: auto;
+        }
+
+        /* feedback section */
+        #feedback-section {
+            padding: 50px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        #feedback-section h2,
+        #feedback-section h3 {
+            text-align: center;
+            color: #8b3f60;
+            margin-bottom: 40px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        #feedback-section h2 {
+            font-size: 2.2em;
+        }
+
+        #feedback-section h3 {
+            font-size: 1.8em;
+        }
+
+        .swiper {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .rating {
+            margin-bottom: 15px;
+        }
+
+        .fa-star {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .checked {
+            color: #f5b301;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        /* feedback section */
         footer {
             background-color: #310101;
             color: #fff;
@@ -195,25 +363,31 @@
             position: relative;
             z-index: 1;
         }
+
         footer p {
             margin: 0;
             font-size: 0.9em;
         }
+
         footer a {
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
             transition: color 0.2s ease;
         }
+
         footer a:hover {
             color: #f098eb;
         }
+
         footer i {
             margin-right: 5px;
         }
+
         footer a i {
             color: #fff;
         }
+
         footer a:hover i {
             color: #f098eb;
         }
@@ -334,7 +508,8 @@
                             <li><a href="pages/wedding-planning-package/theme.html#fairytale-section">Fairytale</a></li>
                             <li><a href="pages/wedding-planning-package/theme.html#garden-section">Garden</a></li>
                             <li><a href="pages/wedding-planning-package/theme.html#bohemian-section">Bohemian</a></li>
-                            <li><a href="pages/wedding-planning-package/theme.html#modern-minimalist-section">Modern Minimalist</a></li>
+                            <li><a href="pages/wedding-planning-package/theme.html#modern-minimalist-section">Modern
+                                    Minimalist</a></li>
                             <li><a href="pages/wedding-planning-package/theme.html#bollywood-section">Bollywood</a></li>
                         </ol>
                     </li>
@@ -342,7 +517,137 @@
             </div>
         </div>
     </section>
-    <footer >
+    <section id="testimonials-section">
+        <h2>Testimonials</h2>
+        <div id="testimonials-container">
+            <div class="testimonials-img">
+                <img id="testimonial-1" src="attachment/testimonials/testimonial-1.jpg" alt="Testimonial 1">
+                <img id="testimonial-2" src="attachment/testimonials/testimonial-2.PNG" alt="Testimonial 2">
+                <img id="testimonial-3" src="attachment/testimonials/testimonial-3.PNG" alt="Testimonial 3">
+                <img id="testimonial-4" src="attachment/testimonials/testimonial-4.PNG" alt="Testimonial 4">
+                <img id="testimonial-5" src="attachment/testimonials/testimonial-5.PNG" alt="Testimonial 5">
+            </div>
+            <div class="testimonials-text">
+                <p>
+                    "LumaBridal made our wedding day unforgettable! Their attention to detail and creativity were beyond
+                    our expectations. Highly recommend!"
+                </p>
+                <p>- Sarah & John</p>
+            </div>
+        </div>
+    </section>
+    <section id="feedback-section">
+        <h2>Feedback</h2>
+        <h3>What Our Clients Say</h3>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>"LumaBridal made our wedding day unforgettable! Their attention to detail and creativity
+                                were beyond our expectations. Highly recommend!"</p>
+                            <p>- Sarah & John</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p>"We're beyond thrilled with everything! The decoration, doorgifts, and wedding cards were
+                                absolutely perfect! 😍 Even though we were quite particular, the Luma Bridal team
+                                patiently followed all our requests and made our dream wedding come true. Our guests
+                                kept saying how beautiful the event was, and we’re so happy and grateful! 🫰🏻"</p>
+                            <p>- Zara & Syed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>"Worth every cent. Guests couldn't stop complimenting our wedding. Good job, Luma Bridal
+                                team!! 🫶🏻"</p>
+                            <p>- Malia & Adam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p>"No touch-ups needed the whole day. My makeup stayed flawless from akad to reception,
+                                even with the outdoor venue! Thankyou so much! 🥰"</p>
+                            <p>- Rania & Azra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+
+                            </div>
+                            <p>"The team really understood our vision. So beautiful! Highly recommended."</p>
+                            <p>- Fira & Elham</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>"Choosing LumaBridal was the best decision! They perfectly brought my Bollywood wedding
+                                dream to life, following every request I had. I'm so, so happy with how everything
+                                turned out! 💃🏻💍"</p>
+                            <p>- Devi & Krishnan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
         <p>&copy; 2023 LumaBridal. All rights reserved.</p>
         <p>Follow us on:
             <a href="https://wa.link/1cojxb" target="_blank"><i class="fa-brands fa-whatsapp"></i> Contact
@@ -352,9 +657,34 @@
                 Contact Us on Instagram</a> |
             <a href="https://www.tiktok.com/@lumabridal?_t=ZS-8xh8hGZU3Ob&_r=1" target="_blank"><i
                     class="fa-brands fa-tiktok"></i> Contact Us on TikTok</a>
-
         </p>
     </footer>
+    <audio autoplay loop>
+        <source src="attachment/background-audio.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            grabCursor: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 1.5,
+                },
+                1024: {
+                    slidesPerView: 2.2,
+                },
+            }
+        });
+    </script>
 </body>
 
 </html>
