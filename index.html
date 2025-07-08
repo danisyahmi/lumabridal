@@ -64,6 +64,17 @@
             z-index: 1;
         }
 
+        #introduction-section button {
+            position: fixed; 
+            bottom: 20px; right: 
+            20px; z-index: 999; 
+            border-radius: 6px; 
+            background-color: #f4f4f4;
+            color: #8b3f60;
+            border: none;
+            padding: 10px 10px;
+        }
+
         #introduction-section p {
             font-size: 1.15em;
             color: #444;
@@ -195,8 +206,8 @@
             z-index: 1;
         }
 
-        #testimonials-section h2{
-          text-align: center;
+        #testimonials-section h2 {
+            text-align: center;
             font-size: 2.2em;
             color: #8b3f60;
             margin-bottom: 40px;
@@ -227,6 +238,9 @@
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
             opacity: 0;
             transform: scale(0.8);
+        }
+
+        .pop-in {
             animation: popIn 0.6s ease forwards;
         }
 
@@ -238,15 +252,15 @@
         }
 
         #testimonial-2 {
-            top: 10%;
+            top: 0;
             right: 10%;
             transform: translateY(-50%) scale(0.8);
             animation-delay: 0.2s;
         }
 
         #testimonial-3 {
-            top: 20%;
-            left: 20%;
+            top: 30%;
+            left: 30%;
             transform: translate(-50%, -50%) scale(0.8);
             width: 180px;
             height: 220px;
@@ -255,15 +269,15 @@
         }
 
         #testimonial-4 {
-            top: 60%;
-            right: 0%;
+            bottom: 0;
+            left: 0%;
             transform: translateY(-50%) scale(0.8);
             animation-delay: 0.4s;
         }
 
         #testimonial-5 {
-            top: 60%;
-            left: 5%;
+            bottom: 0;
+            right: 10%;
             transform: translateX(-50%) scale(0.8);
             animation-delay: 0.5s;
         }
@@ -281,10 +295,11 @@
         }
 
         .testimonials-text {
-            margin-left: 20px;
             font-family: 'Open Sans', sans-serif;
             text-align: center;
             margin: auto;
+            max-width: 400px;
+            padding-right: 200px;
         }
 
         /* feedback section */
@@ -398,7 +413,7 @@
     <header class="navbar">
         <nav>
             <ul>
-                <li class="navbar-left"><a href="/index.html">LumaBridal</a></li>
+                <li class="navbar-left"><a href="index.html">LumaBridal</a></li>
                 <li>
                     <a href="pages/about.html">About us</a>
                 </li>
@@ -458,6 +473,7 @@
         <h3>Your Story, Styled Beautifully</h3>
     </section>
     <section id="introduction-section">
+        <button onclick="document.getElementById('bg-audio').play()">🔊 Play Music</button>
         <p>
             Established with passion and love for weddings, LumaBridal Weddings is a boutique wedding planning company
             that specializes in creating unforgettable, picture-perfect moments for every couple. From timeless
@@ -521,11 +537,16 @@
         <h2>Testimonials</h2>
         <div id="testimonials-container">
             <div class="testimonials-img">
-                <img id="testimonial-1" src="attachment/testimonials/testimonial-1.jpg" alt="Testimonial 1">
-                <img id="testimonial-2" src="attachment/testimonials/testimonial-2.PNG" alt="Testimonial 2">
-                <img id="testimonial-3" src="attachment/testimonials/testimonial-3.PNG" alt="Testimonial 3">
-                <img id="testimonial-4" src="attachment/testimonials/testimonial-4.PNG" alt="Testimonial 4">
-                <img id="testimonial-5" src="attachment/testimonials/testimonial-5.PNG" alt="Testimonial 5">
+                <img id="testimonial-1" class="testimonial-img" src="attachment/testimonials/testimonial-3.PNG"
+                    alt="Testimonial 1">
+                <img id="testimonial-2" class="testimonial-img" src="attachment/testimonials/testimonial-2.PNG"
+                    alt="Testimonial 2">
+                <img id="testimonial-3" class="testimonial-img" src="attachment/testimonials/testimonial-1.jpg"
+                    alt="Testimonial 3">
+                <img id="testimonial-4" class="testimonial-img" src="attachment/testimonials/testimonial-4.PNG"
+                    alt="Testimonial 4">
+                <img id="testimonial-5" class="testimonial-img" src="attachment/testimonials/testimonial-5.PNG"
+                    alt="Testimonial 5">
             </div>
             <div class="testimonials-text">
                 <p>
@@ -551,7 +572,7 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
                             </div>
                             <p>"LumaBridal made our wedding day unforgettable! Their attention to detail and creativity
                                 were beyond our expectations. Highly recommend!"</p>
@@ -607,7 +628,7 @@
                             </div>
                             <p>"No touch-ups needed the whole day. My makeup stayed flawless from akad to reception,
                                 even with the outdoor venue! Thankyou so much! 🥰"</p>
-                            <p>- Rania & Azra</p>
+                            <p>- Rania Azra</p>
                         </div>
                     </div>
                 </div>
@@ -635,7 +656,7 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
                             </div>
                             <p>"Choosing LumaBridal was the best decision! They perfectly brought my Bollywood wedding
                                 dream to life, following every request I had. I'm so, so happy with how everything
@@ -659,7 +680,7 @@
                     class="fa-brands fa-tiktok"></i> Contact Us on TikTok</a>
         </p>
     </footer>
-    <audio autoplay loop>
+    <audio id="bg-audio" loop>
         <source src="attachment/background-audio.mp3" type="audio/mpeg">
     </audio>
     <!-- Swiper -->
@@ -682,6 +703,38 @@
                 1024: {
                     slidesPerView: 2.2,
                 },
+            }
+        });
+    </script>
+    <!-- DOMEventListener -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('bg-audio');
+
+            // Optional: allow playing on any click
+            document.body.addEventListener('click', () => {
+                audio.play().catch(err => {
+                    console.log("Still blocked:", err);
+                });
+            }, { once: true });
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const imgs = document.querySelectorAll('.testimonial-img');
+                        imgs.forEach((img, index) => {
+                            setTimeout(() => {
+                                img.classList.add('pop-in');
+                            }, index * 200);
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            const section = document.getElementById('testimonials-section');
+            if (section) {
+                observer.observe(section);
             }
         });
     </script>
